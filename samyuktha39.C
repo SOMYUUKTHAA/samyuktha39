@@ -1,14 +1,17 @@
 #include<stdio.h>
 void main()
 {
-    char a[1000];
-    int b=0;
-    printf("\n Enter string");
-    scanf("%s",&a);
-    if(a[b]%1==0 && b!='\0')
-    {
-        b++;
-        
-    }
-printf("THE MAXIMUM NUMBERS ARE:%d",b);
+   int a[10],i,temp,b;
+   printf("\nenter the values\n");
+   for(int i=0;i<10;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   b=a[0];
+   for(i=1;i<10;i++)
+   {
+      if(b<a[i])
+      b=a[i];
+   }
+   printf("%d",b);
 }
